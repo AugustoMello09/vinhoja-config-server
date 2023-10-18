@@ -1,0 +1,14 @@
+datasource:
+  url: jdbc:postgresql://hr-card-pg12:5432/card
+  username: postgres
+  password: 1234567
+  properties:
+    hibernate:
+      jdbc:
+        lob:
+          non_contextual_creation: true
+  jpa:
+    properties:
+      hibernate:
+        ddl-auto: none
+
