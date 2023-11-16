@@ -1,16 +1,18 @@
-datasource:
-  url: jdbc:postgresql://localhost:5433/user
-  username: postgres
-  password: 1234567
-  properties:
-    hibernate:
-      jdbc:
-        lob:
-          non_contextual_creation: true
-  jpa:
-    properties:
-      hibernate:
-        ddl-auto: update
+spring:
+  profiles: dev
+  datasource:
+   url: jdbc:postgresql://localhost:5433/user
+   username: postgres
+   password: 1234567
+   properties:
+     hibernate:
+       jdbc:
+         lob:
+           non_contextual_creation: true
+   jpa:
+     properties:
+       hibernate:
+         ddl-auto: update
 
         
 
