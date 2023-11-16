@@ -1,5 +1,5 @@
 datasource:
-  url: jdbc:postgresql://hr-user-pg12:5432/user
+  url: jdbc:postgresql://localhost:5433/user
   username: postgres
   password: 1234567
   properties:
@@ -11,4 +11,18 @@ datasource:
     properties:
       hibernate:
         ddl-auto: none
+
+spring:
+  jpa:
+    properties:
+      javax:
+        persistence:
+          schema-generation:
+            create-source: metadata
+            scripts:
+              action: create
+              create-target: create.sql
+          hibernate:
+            hbm2ddl:
+              delimiter: ";"        
 
