@@ -1,6 +1,4 @@
-spring:
-  profiles: dev
-  datasource:
+ datasource:
    url: jdbc:postgresql://localhost:5433/user
    username: postgres
    password: 1234567
