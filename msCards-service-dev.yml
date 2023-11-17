@@ -1,14 +1,21 @@
-spring: 
- datasource:
-   url: jdbc:postgresql://localhost:5433/cards
-   username: postgres
-   password: 1234567
-   properties:
-     hibernate:
-       jdbc:
-         lob:
-           non_contextual_creation: true
-     javax:
+datasource:
+  url: jdbc:postgresql://hr-email-pg12:5432/cards
+  username: postgres
+  password: 1234567
+  properties:
+    hibernate:
+      jdbc:
+        lob:
+          non_contextual_creation: true
+  jpa:
+    properties:
+      hibernate:
+        ddl-auto: none
+
+spring:
+  jpa:
+    properties:
+      javax:
         persistence:
           schema-generation:
             create-source: metadata
@@ -17,11 +24,7 @@ spring:
               create-target: create.sql
           hibernate:
             hbm2ddl:
-              delimiter: ";"      
-   jpa:
-     properties:
-       hibernate:
-         ddl-auto: none
+              delimiter: ";"                   
 
         
 
