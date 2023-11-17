@@ -1,5 +1,5 @@
 datasource:
-  url: jdbc:postgresql://hr-email-pg12:5432/cards
+  url: jdbc:postgresql://localhost:5433/cards
   username: postgres
   password: 1234567
   properties:
