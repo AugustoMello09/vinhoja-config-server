@@ -1,3 +1,4 @@
+spring: 
  datasource:
    url: jdbc:postgresql://localhost:5433/user
    username: postgres
@@ -10,7 +11,7 @@
    jpa:
      properties:
        hibernate:
-         ddl-auto: update
+         ddl-auto: none
 
         
 
