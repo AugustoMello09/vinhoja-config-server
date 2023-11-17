@@ -1,5 +1,5 @@
 datasource:
-  url: jdbc:postgresql://hr-email-pg12:5432/email
+  url: jdbc:postgresql://localhost:5433/payment
   username: postgres
   password: 1234567
   properties:

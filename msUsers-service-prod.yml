@@ -1,5 +1,5 @@
 datasource:
-  url: jdbc:postgresql://localhost:5432/user
+  url: jdbc:postgresql://localhost:5433/user
   username: postgres
   password: 1234567
   properties:
