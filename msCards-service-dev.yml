@@ -8,6 +8,16 @@ spring:
        jdbc:
          lob:
            non_contextual_creation: true
+     javax:
+        persistence:
+          schema-generation:
+            create-source: metadata
+            scripts:
+              action: create
+              create-target: create.sql
+          hibernate:
+            hbm2ddl:
+              delimiter: ";"      
    jpa:
      properties:
        hibernate:
