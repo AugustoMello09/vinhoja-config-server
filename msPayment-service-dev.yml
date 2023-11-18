@@ -1,5 +1,5 @@
-spring: 
- datasource:
+ 
+datasource:
    url: jdbc:postgresql://localhost:5433/payment
    username: postgres
    password: 1234567
@@ -13,5 +13,18 @@ spring:
        hibernate:
          ddl-auto: none
 
+spring:
+  jpa:
+    properties:
+      javax:
+        persistence:
+          schema-generation:
+            create-source: metadata
+            scripts:
+              action: create
+              create-target: create.sql
+          hibernate:
+            hbm2ddl:
+              delimiter: ";"                   
         
 
