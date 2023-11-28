@@ -1,6 +1,6 @@
 spring: 
  datasource:
-   url: jdbc:postgresql://localhost:5432/user
+   url: jdbc:postgresql://pg-docker:5432/user
    username: postgres
    password: 1234567
    properties:
